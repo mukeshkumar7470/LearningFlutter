@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Text("Hello $name Welcome to $days World"),
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 
