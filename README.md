@@ -23,3 +23,5 @@ https://medium.com/flutter-community/beginners-guide-to-text-styling-in-flutter-
 
 ![image](https://user-images.githubusercontent.com/48297190/137863600-a73f7d62-83b8-4b39-ab2a-b967c5b3136d.png)
 
+⦾ Align Flutter App Bar Title in center
+
