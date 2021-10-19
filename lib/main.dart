@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:learning_flutter/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-   //const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome World"),
-          ),
-        ),
-      ),
+    return const MaterialApp(
+      home: HomePage(),
     );
   }
   
