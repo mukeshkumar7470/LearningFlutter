@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 "# LearningFlutter" 
 
 
-Beginners Guide To Text Styling in Flutter
+## Beginners Guide To Text Styling in Flutter
 
 https://medium.com/flutter-community/beginners-guide-to-text-styling-in-flutter-3939085d6607
 
