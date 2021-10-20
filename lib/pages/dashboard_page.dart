@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class DashboardPage extends StatelessWidget {
-  const DashboardPage({Key? key}) : super(key: key);
   static const String dashboardRoute = '/Dashboard';
 
   @override
