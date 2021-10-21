@@ -1,23 +1,16 @@
 import 'package:flutter/material.dart';
 
-class DashboardPage extends StatelessWidget {
-  static const String dashboardRoute = '/Dashboard';
+class DashboardPage extends StatefulWidget {
+  const DashboardPage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Dashboard"),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Navigate back to first route when tapped.
-          },
-          child: Text('Go back!'),
+  _DashboardPageState createState() => _DashboardPageState();
+}
 
-        ),
-      ),
-    );
+class _DashboardPageState extends State<DashboardPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
+

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:learning_flutter/pages/dashboard_page.dart';
 
 class LoginPage2 extends StatelessWidget {
-  const LoginPage2({Key? key}) : super(key: key);
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +33,7 @@ class LoginPage2 extends StatelessWidget {
               child: Column(
                 children: [
                   TextFormField(
+                    controller: usernameController,
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: "Enter Username",
@@ -42,6 +44,8 @@ class LoginPage2 extends StatelessWidget {
                     height: 8.0,
                   ),
                   TextFormField(
+                    obscureText: true,
+                    controller: passwordController,
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
                         hintText: "Enter Password",
@@ -58,16 +62,29 @@ class LoginPage2 extends StatelessWidget {
                   width: double.infinity, // <-- match_parent
                   height: 42.0,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.indigo),
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(4.0),
+                                side: BorderSide(color: Colors.indigo)
+                            )
+                        )
+                    ),
                     child: Text("Login"),
 
                     onPressed: () {
                       print("Login Clicked");
+                      print(usernameController.text+"------"+passwordController.text);
                       Navigator.push(context, MaterialPageRoute(builder: (context) => DashboardPage()),
                       );
                     },
                   ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 24.0,
+            ),
           ],
         ),
       ),
